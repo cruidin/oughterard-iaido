@@ -174,4 +174,187 @@
     line-height: 1.3;
   }
 
-  p { font-size: 1.02rem; color: #34302b; margin-bottom: 1rem
+  p { font-size: 1.02rem; color: #34302b; margin-bottom: 1rem; max-width: 58ch; }
+  p:last-child { margin-bottom: 0; }
+
+  .facts {
+    margin-top: 2rem;
+    border-top: 1px solid var(--stone);
+  }
+  .fact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--stone);
+  }
+  .fact-key {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--stone-solid);
+    flex-shrink: 0;
+    padding-top: 0.1rem;
+  }
+  .fact-val {
+    text-align: right;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+  .fact-val .small {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--stone-solid);
+    margin-top: 0.2rem;
+  }
+
+  .lineage-card {
+    margin-top: 1.8rem;
+    border-left: 2px solid var(--indigo);
+    padding-left: 1.5rem;
+  }
+  .lineage-card .role {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--indigo);
+    margin-bottom: 0.3rem;
+  }
+
+  .join {
+    background: var(--washi-deep);
+  }
+  .join-cta {
+    display: inline-block;
+    margin-top: 1.6rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--washi);
+    background: var(--ink);
+    padding: 0.9rem 1.8rem;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .join-cta:hover { background: var(--indigo); }
+
+  footer {
+    text-align: center;
+    padding: 4rem 6vw 3.5rem;
+  }
+  .seal {
+    width: 34px; height: 34px;
+    border: 1.5px solid var(--hanko);
+    color: var(--hanko);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.05rem;
+  }
+  footer .fine {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--stone-solid);
+  }
+
+  @media (max-width: 560px) {
+    .fact-row { flex-direction: column; gap: 0.3rem; }
+    .fact-val { text-align: left; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .stroke-path, .eyebrow, .title, .subtitle, .hero-cta {
+      animation: none !important;
+      opacity: 1 !important;
+      stroke-dashoffset: 0 !important;
+    }
+  }
+
+  a:focus-visible, .hero-cta:focus-visible {
+    outline: 2px solid var(--indigo);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+
+  <section class="hero" style="max-width:none;">
+    <div class="stroke-wrap">
+      <svg viewBox="0 0 4 160" preserveAspectRatio="none">
+        <path class="stroke-path" d="M2,2 L2,158" />
+      </svg>
+    </div>
+    <div class="eyebrow">居合道 · Iaido</div>
+    <h1 class="title">Iaido<br>— Oughterard</h1>
+    <p class="subtitle">Traditional Japanese swordsmanship, now training in Connemara. One movement, fully committed — drawn, cut, and returned.</p>
+    <a href="#sessions" class="hero-cta">Session details ↓</a>
+  </section>
+
+  <div class="divider"><svg viewBox="0 0 2 60"><path d="M1,0 L1,60"/></svg></div>
+
+  <section id="about">
+    <div class="section-label">What is Iaido</div>
+    <h2>The art of the single, decisive cut.</h2>
+    <p>Iaido (居合道) is a Japanese martial art centred on the smooth, controlled drawing of the sword, responding to a sudden attack, and returning the blade to its scabbard with equal composure. There is no sparring — the discipline is entirely in precision, timing, and stillness.</p>
+    <p>Training is done individually, through a sequence of forms (kata), practised slowly and deliberately until the movement becomes quiet and exact. It suits patient, self-directed practice as much as group training.</p>
+  </section>
+
+  <div class="divider"><svg viewBox="0 0 2 60"><path d="M1,0 L1,60"/></svg></div>
+
+  <section id="sessions">
+    <div class="section-label">Sessions</div>
+    <h2>Monday evenings, Oughterard.</h2>
+    <p>Weekly sessions are held at the Courthouse in Oughterard — a space with the high ceilings and open floor Iaido practice needs. All levels welcome, including complete beginners; no equipment is required to start.</p>
+    <div class="facts">
+      <div class="fact-row">
+        <div class="fact-key">Day &amp; Time</div>
+        <div class="fact-val">Mondays<span class="small">7:00 – 9:00pm</span></div>
+      </div>
+      <div class="fact-row">
+        <div class="fact-key">Location</div>
+        <div class="fact-val">The Courthouse<span class="small">Oughterard, Co. Galway</span></div>
+      </div>
+      <div class="fact-row">
+        <div class="fact-key">Format</div>
+        <div class="fact-val">Instructor practice, then group session<span class="small">All levels — beginners welcome</span></div>
+      </div>
+      <div class="fact-row">
+        <div class="fact-key">Starting</div>
+        <div class="fact-val">Late August 2026<span class="small">Public demonstration evening mid–late September</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><svg viewBox="0 0 2 60"><path d="M1,0 L1,60"/></svg></div>
+
+  <section id="lineage">
+    <div class="section-label">Lineage</div>
+    <h2>Trained under Kenseikai, Dublin.</h2>
+    <p>Sessions here are led by Patricia, a long-standing student of the Kenseikai dojo in Dublin, under Sensei Nick. This Oughterard group continues that same lineage and practice for those in Connemara and the surrounding area.</p>
+    <div class="lineage-card">
+      <div class="role">Home Dojo</div>
+      <div>Kenseikai — Dublin</div>
+    </div>
+  </section>
+
+  <div class="divider"><svg viewBox="0 0 2 60"><path d="M1,0 L1,60"/></svg></div>
+
+  <section id="join" class="join" style="max-width:none;">
+    <div style="max-width:720px; margin:0 auto;">
+      <div class="section-label">Join</div>
+      <h2>Curious? Come along.</h2>
+      <p>No experience or equipment is needed for the first session — come and see what Iaido is before deciding whether to continue. Get in touch with any questions about the practice or the sessions.</p>
+      <a href="mailto:oughterard.iaido@gmail.com" class="join-cta">Get in touch →</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="seal">合</div>
+    <div class="fine">IAIDO — OUGHTERARD · CONNEMARA</div>
+  </footer>
+
+</body>
+</html>
