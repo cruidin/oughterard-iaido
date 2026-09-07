@@ -7,6 +7,9 @@
 <meta name="description" content="Iaido training in Oughterard, Connemara. Muso Jikiden Eishin Ryu, affiliated with Kenseikai Ireland. Mondays at the Courthouse, Oughterard.">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   html { color-scheme: light only; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,16 +30,27 @@
     margin-bottom: 10px;
   }
 
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #7a0c0c;
+    margin-bottom: 10px;
+  }
+
   h1 {
-    font-size: 1.5rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.9rem;
     font-weight: 700;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
   }
 
   .subtitle {
-    margin-top: 8px;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
+    margin-top: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
     color: #555;
   }
 
@@ -84,10 +98,11 @@
   }
 
   h2 {
-    font-size: 1.05rem;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 12px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1.5px solid #7a0c0c;
     padding-bottom: 8px;
   }
 
@@ -112,8 +127,9 @@
     border-bottom: 1px solid #ddd;
   }
   .fact-key {
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: #666;
     flex-shrink: 0;
@@ -148,9 +164,22 @@
     padding-top: 24px;
     border-top: 1px solid #ddd;
   }
+  .seal {
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid #7a0c0c;
+    color: #7a0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1rem;
+  }
   footer .fine {
-    font-size: 0.72rem;
-    letter-spacing: 0.06em;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
     color: #888;
   }
 
@@ -164,8 +193,9 @@
 <body>
 
   <header>
-    <h1>OUGHTERARD IAIDO</h1>
-    <div class="subtitle">MUSO JIKIDEN EISHIN RYU IAIDO</div>
+    <div class="eyebrow">&#23621;&#21512;&#36947; &middot; IAIDO</div>
+    <h1>Oughterard Iaido</h1>
+    <div class="subtitle">MUSO JIKIDEN EISHIN RYU</div>
     <div class="tagline">Traditional Japanese swordsmanship in Oughterard, Connemara.</div>
   </header>
 
@@ -200,6 +230,10 @@
         <div class="fact-val">Beginners course<span class="small">Instructor practice, then group session</span></div>
       </div>
       <div class="fact-row">
+        <div class="fact-key">Curriculum</div>
+        <div class="fact-val">Zen Nihon Kendo Renmei &mdash; ZNKR</div>
+      </div>
+      <div class="fact-row">
         <div class="fact-key">First class</div>
         <div class="fact-val">Free</div>
       </div>
@@ -227,6 +261,7 @@
   </section>
 
   <footer>
+    <div class="seal">&#21512;</div>
     <div class="fine">OUGHTERARD IAIDO &middot; CONNEMARA</div>
   </footer>
 
